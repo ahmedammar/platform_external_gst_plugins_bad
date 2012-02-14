@@ -84,7 +84,7 @@ gst-plugins-bad-configure:
 	LDFLAGS="$(CONFIGURE_LDFLAGS)" \
 	CPP=$(CONFIGURE_CPP) \
 	CPPFLAGS="$(CONFIGURE_CPPFLAGS)" \
-	PKG_CONFIG_PATH="$(CONFIGURE_PKG_CONFIG_PATH)" \
+	PKG_CONFIG_LIBDIR="$(CONFIGURE_PKG_CONFIG_PATH)" \
 	PKG_CONFIG_TOP_BUILD_DIR=/ \
 	$(abspath $(GST_PLUGINS_BAD_TOP))/$(CONFIGURE) \
 		--prefix=/system --host=arm-linux-androideabi --disable-gtk-doc \
