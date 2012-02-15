@@ -16,7 +16,7 @@ libgstvideosignal_la_LIBTOOLFLAGS = --tag=disable-static
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvideosignal -:SHARED libgstvideosignal \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvideosignal_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstvideosignal_la_CFLAGS) \

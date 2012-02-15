@@ -22,7 +22,7 @@ noinst_HEADERS = gstcoloreffects.h gstchromahold.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstcoloreffects -:SHARED libgstcoloreffects \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstcoloreffects_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstcoloreffects_la_CFLAGS) \

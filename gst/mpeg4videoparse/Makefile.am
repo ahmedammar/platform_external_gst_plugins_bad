@@ -12,7 +12,7 @@ noinst_HEADERS = mpeg4videoparse.h mpeg4parse.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstmpeg4videoparse -:SHARED libgstmpeg4videoparse \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstmpeg4videoparse_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstmpeg4videoparse_la_CFLAGS) \

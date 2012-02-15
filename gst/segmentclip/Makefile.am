@@ -12,7 +12,7 @@ noinst_HEADERS = gstsegmentclip.h gstaudiosegmentclip.h gstvideosegmentclip.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstsegmentclip -:SHARED libgstsegmentclip \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstsegmentclip_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstsegmentclip_la_CFLAGS) \

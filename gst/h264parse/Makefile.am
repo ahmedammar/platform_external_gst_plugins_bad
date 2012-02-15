@@ -14,7 +14,7 @@ libgsth264parse_la_LIBTOOLFLAGS = --tag=disable-static
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgsth264parse -:SHARED libgsth264parse \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgsth264parse_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgsth264parse_la_CFLAGS) \

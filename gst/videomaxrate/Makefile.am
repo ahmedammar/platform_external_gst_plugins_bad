@@ -12,7 +12,7 @@ libgstvideomaxrate_la_LIBTOOLFLAGS = --tag=disable-static
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvideomaxrate -:SHARED libgstvideomaxrate \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvideomaxrate_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstvideomaxrate_la_CFLAGS) \

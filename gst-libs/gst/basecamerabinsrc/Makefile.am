@@ -28,7 +28,7 @@ libgstbasecamerabinsrc_@GST_MAJORMINOR@_la_LDFLAGS = $(GST_LIB_LDFLAGS) $(GST_AL
 
 Android.mk: Makefile.am
 	androgenizer -:PROJECT libgstbasecamerabinsrc -:STATIC libgstbasecamerabinsrc-@GST_MAJORMINOR@ \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstbasecamerabinsrc_@GST_MAJORMINOR@_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(libgstbasecamerabinsrc_@GST_MAJORMINOR@_la_CFLAGS) \

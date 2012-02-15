@@ -14,7 +14,7 @@ noinst_HEADERS = gstrtpmux.h gstrtpdtmfmux.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstrtpmux -:SHARED libgstrtpmux \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstrtpmux_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstrtpmux_la_CFLAGS) \

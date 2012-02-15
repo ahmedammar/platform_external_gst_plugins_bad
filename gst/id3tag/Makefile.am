@@ -21,7 +21,7 @@ noinst_HEADERS = gstid3mux.h gsttagmux.h id3tag.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstid3tag -:SHARED libgstid3tag \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstid3tag_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstid3tag_la_CFLAGS) \
