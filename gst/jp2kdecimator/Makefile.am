@@ -16,7 +16,7 @@ noinst_HEADERS = gstjp2kdecimator.h jp2kcodestream.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstjp2kdecimator -:SHARED libgstjp2kdecimator \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstjp2kdecimator_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstjp2kdecimator_la_CFLAGS) \

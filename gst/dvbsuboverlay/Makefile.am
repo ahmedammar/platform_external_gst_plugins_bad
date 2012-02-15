@@ -12,7 +12,7 @@ noinst_HEADERS = gstdvbsuboverlay.h dvb-sub.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstdvbsuboverlay -:SHARED libgstdvbsuboverlay \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstdvbsuboverlay_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstdvbsuboverlay_la_CFLAGS) \

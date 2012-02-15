@@ -17,7 +17,7 @@ EXTRA_DIST = blur-example.py  burn-example.py
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstgaudieffects -:SHARED libgstgaudieffects \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstgaudieffects_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstgaudieffects_la_CFLAGS) \

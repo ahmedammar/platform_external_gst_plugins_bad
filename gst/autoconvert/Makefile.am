@@ -12,7 +12,7 @@ noinst_HEADERS = gstautoconvert.h gstautovideoconvert.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstautoconvert -:SHARED libgstautoconvert \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstautoconvert_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstautoconvert_la_CFLAGS) \

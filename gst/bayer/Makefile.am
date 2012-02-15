@@ -22,7 +22,7 @@ nodist_libgstbayer_la_SOURCES = $(ORC_NODIST_SOURCES)
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstbayer -:SHARED libgstbayer \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstbayer_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstbayer_la_CFLAGS) \
